@@ -31,12 +31,7 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run:
-          gh pr list \
-            --app dependabot \
-            --state open \
-            --limit 100 \
-            --json title,url,createdAt \
-            > prs.json
+          gh pr list --app dependabot --state open --limit 100 --json title,url,createdAt > prs.json
 
       - name: Generate RSS feed
         run: python3 scripts/generate-rss-feed.py
