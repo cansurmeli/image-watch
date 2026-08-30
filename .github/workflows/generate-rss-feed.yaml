@@ -29,7 +29,7 @@ jobs:
 
       - name: Get Dependabot pull requests
         env:
-          GH_TOKEN: ${ github.token }}
+          GH_TOKEN: ${{ github.token }}
         run:
           gh pr list \
             --app dependabot \
