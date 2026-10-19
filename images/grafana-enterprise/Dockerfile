@@ -1,1 +1,1 @@
-FROM grafana/grafana-enterprise:13.0.7-boringcrypto
+FROM grafana/grafana-enterprise:13.2.4-boringcrypto
